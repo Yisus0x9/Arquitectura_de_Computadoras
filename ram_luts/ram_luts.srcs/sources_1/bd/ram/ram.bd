@@ -1,0 +1,24 @@
+{
+  "design": {
+    "design_info": {
+      "boundary_crc": "0x0",
+      "device": "xc7a100tcsg324-3",
+      "gen_directory": "../../../../ram_luts.gen/sources_1/bd/ram",
+      "name": "ram",
+      "rev_ctrl_bd_flag": "RevCtrlBdOff",
+      "synth_flow_mode": "Hierarchical",
+      "tool_version": "2023.1"
+    },
+    "design_tree": {
+      "ram": ""
+    },
+    "components": {
+      "ram": {
+        "vlnv": "xilinx.com:ip:dist_mem_gen:8.0",
+        "xci_name": "ram_dist_mem_gen_0_0",
+        "xci_path": "ip\\ram_dist_mem_gen_0_0\\ram_dist_mem_gen_0_0.xci",
+        "inst_hier_path": "ram"
+      }
+    }
+  }
+}
