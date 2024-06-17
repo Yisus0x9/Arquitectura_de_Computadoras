@@ -1,0 +1,239 @@
+
+*** Running vivado
+    with args -log Registros.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source Registros.tcl
+
+
+ECHO est  desactivado.
+ECHO est  desactivado.
+
+****** Vivado v2023.1 (64-bit)
+  **** SW Build 3865809 on Sun May  7 15:05:29 MDT 2023
+  **** IP Build 3864474 on Sun May  7 20:36:21 MDT 2023
+  **** SharedData Build 3865790 on Sun May 07 13:33:03 MDT 2023
+    ** Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+    ** Copyright 2022-2023 Advanced Micro Devices, Inc. All Rights Reserved.
+
+source Registros.tcl -notrace
+create_project: Time (s): cpu = 00:00:14 ; elapsed = 00:00:16 . Memory (MB): peak = 446.695 ; gain = 163.508
+Command: read_checkpoint -auto_incremental -incremental D:/Arqui/Registros/Registros.srcs/utils_1/imports/synth_1/Registros.dcp
+INFO: [Vivado 12-5825] Read reference checkpoint from D:/Arqui/Registros/Registros.srcs/utils_1/imports/synth_1/Registros.dcp for incremental synthesis
+INFO: [Vivado 12-7989] Please ensure there are no constraint changes
+Command: synth_design -top Registros -part xc7a100tcsg324-3
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7a100t'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a100t'
+INFO: [Device 21-403] Loading part xc7a100tcsg324-3
+INFO: [Designutils 20-5440] No compile time benefit to using incremental synthesis; A full resynthesis will be run
+INFO: [Designutils 20-4379] Flow is switching to default flow due to incremental criteria not met. If you would like to alter this behaviour and have the flow terminate instead, please set the following parameter config_implementation {autoIncr.Synth.RejectBehavior Terminate}
+INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 2 processes.
+INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
+INFO: [Synth 8-7075] Helper process launched with PID 5660
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:14 ; elapsed = 00:00:17 . Memory (MB): peak = 1280.664 ; gain = 412.125
+---------------------------------------------------------------------------------
+INFO: [Synth 8-638] synthesizing module 'Registros' [D:/Arqui/Registros/Registros.srcs/sources_1/new/Registros.vhd:23]
+WARNING: [Synth 8-614] signal 'WR_DATA' is read in the process but is not in the sensitivity list [D:/Arqui/Registros/Registros.srcs/sources_1/new/Registros.vhd:29]
+WARNING: [Synth 8-614] signal 'WR_REG' is read in the process but is not in the sensitivity list [D:/Arqui/Registros/Registros.srcs/sources_1/new/Registros.vhd:29]
+INFO: [Synth 8-256] done synthesizing module 'Registros' (0#1) [D:/Arqui/Registros/Registros.srcs/sources_1/new/Registros.vhd:23]
+WARNING: [Synth 8-7129] Port RD_REG1[4] in module Registros is either unconnected or has no load
+WARNING: [Synth 8-7129] Port RD_REG1[3] in module Registros is either unconnected or has no load
+WARNING: [Synth 8-7129] Port RD_REG1[2] in module Registros is either unconnected or has no load
+WARNING: [Synth 8-7129] Port RD_REG2[4] in module Registros is either unconnected or has no load
+WARNING: [Synth 8-7129] Port RD_REG2[3] in module Registros is either unconnected or has no load
+WARNING: [Synth 8-7129] Port RD_REG2[2] in module Registros is either unconnected or has no load
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:18 ; elapsed = 00:00:23 . Memory (MB): peak = 1369.957 ; gain = 501.418
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:19 ; elapsed = 00:00:23 . Memory (MB): peak = 1369.957 ; gain = 501.418
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:19 ; elapsed = 00:00:23 . Memory (MB): peak = 1369.957 ; gain = 501.418
+---------------------------------------------------------------------------------
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1369.957 ; gain = 0.000
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [D:/Arqui/Registros/transferir/ctrReg.xdc]
+Finished Parsing XDC File [D:/Arqui/Registros/transferir/ctrReg.xdc]
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [D:/Arqui/Registros/transferir/ctrReg.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/Registros_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/Registros_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1379.207 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.011 . Memory (MB): peak = 1379.207 ; gain = 0.000
+INFO: [Designutils 20-5440] No compile time benefit to using incremental synthesis; A full resynthesis will be run
+INFO: [Designutils 20-4379] Flow is switching to default flow due to incremental criteria not met. If you would like to alter this behaviour and have the flow terminate instead, please set the following parameter config_implementation {autoIncr.Synth.RejectBehavior Terminate}
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:40 ; elapsed = 00:01:10 . Memory (MB): peak = 1379.207 ; gain = 510.668
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7a100tcsg324-3
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:40 ; elapsed = 00:01:10 . Memory (MB): peak = 1379.207 ; gain = 510.668
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:40 ; elapsed = 00:01:10 . Memory (MB): peak = 1379.207 ; gain = 510.668
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-327] inferring latch for variable 'mem_reg_reg[0]' [D:/Arqui/Registros/Registros.srcs/sources_1/new/Registros.vhd:31]
+WARNING: [Synth 8-327] inferring latch for variable 'mem_reg_reg[1]' [D:/Arqui/Registros/Registros.srcs/sources_1/new/Registros.vhd:31]
+WARNING: [Synth 8-327] inferring latch for variable 'mem_reg_reg[2]' [D:/Arqui/Registros/Registros.srcs/sources_1/new/Registros.vhd:31]
+WARNING: [Synth 8-327] inferring latch for variable 'mem_reg_reg[3]' [D:/Arqui/Registros/Registros.srcs/sources_1/new/Registros.vhd:31]
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:40 ; elapsed = 00:01:11 . Memory (MB): peak = 1379.207 ; gain = 510.668
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Muxes : 
+	   4 Input    8 Bit        Muxes := 2     
+	   2 Input    1 Bit        Muxes := 4     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 240 (col length:80)
+BRAMs: 270 (col length: RAMB18 80 RAMB36 40)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-7080] Parallel synthesis criteria is not met
+WARNING: [Synth 8-7129] Port RD_REG1[4] in module Registros is either unconnected or has no load
+WARNING: [Synth 8-7129] Port RD_REG1[3] in module Registros is either unconnected or has no load
+WARNING: [Synth 8-7129] Port RD_REG1[2] in module Registros is either unconnected or has no load
+WARNING: [Synth 8-7129] Port RD_REG2[4] in module Registros is either unconnected or has no load
+WARNING: [Synth 8-7129] Port RD_REG2[3] in module Registros is either unconnected or has no load
+WARNING: [Synth 8-7129] Port RD_REG2[2] in module Registros is either unconnected or has no load
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:45 ; elapsed = 00:01:17 . Memory (MB): peak = 1379.207 ; gain = 510.668
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:57 ; elapsed = 00:01:30 . Memory (MB): peak = 1379.207 ; gain = 510.668
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:57 ; elapsed = 00:01:30 . Memory (MB): peak = 1379.207 ; gain = 510.668
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:57 ; elapsed = 00:01:30 . Memory (MB): peak = 1379.207 ; gain = 510.668
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:01:10 ; elapsed = 00:01:44 . Memory (MB): peak = 1388.074 ; gain = 519.535
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:01:10 ; elapsed = 00:01:44 . Memory (MB): peak = 1388.074 ; gain = 519.535
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:01:10 ; elapsed = 00:01:44 . Memory (MB): peak = 1388.074 ; gain = 519.535
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:01:10 ; elapsed = 00:01:44 . Memory (MB): peak = 1388.074 ; gain = 519.535
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:01:10 ; elapsed = 00:01:44 . Memory (MB): peak = 1388.074 ; gain = 519.535
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:01:10 ; elapsed = 00:01:44 . Memory (MB): peak = 1388.074 ; gain = 519.535
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+-----+------+
+|      |Cell |Count |
++------+-----+------+
+|1     |LUT5 |     4|
+|2     |LUT6 |    16|
+|3     |LD   |    32|
+|4     |IBUF |    17|
+|5     |OBUF |    16|
++------+-----+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:01:10 ; elapsed = 00:01:44 . Memory (MB): peak = 1388.074 ; gain = 519.535
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 11 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:48 ; elapsed = 00:01:38 . Memory (MB): peak = 1388.074 ; gain = 510.285
+Synthesis Optimization Complete : Time (s): cpu = 00:01:11 ; elapsed = 00:01:44 . Memory (MB): peak = 1388.074 ; gain = 519.535
+INFO: [Project 1-571] Translating synthesized netlist
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.002 . Memory (MB): peak = 1400.156 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 32 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1413.609 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 32 instances were transformed.
+  LD => LDCE: 32 instances
+
+Synth Design complete | Checksum: 7e483908
+INFO: [Common 17-83] Releasing license: Synthesis
+23 Infos, 19 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:01:23 ; elapsed = 00:02:06 . Memory (MB): peak = 1413.609 ; gain = 942.074
+INFO: [Common 17-1381] The checkpoint 'D:/Arqui/Registros/Registros.runs/synth_1/Registros.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file Registros_utilization_synth.rpt -pb Registros_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Mon Jun 10 18:57:56 2024...
