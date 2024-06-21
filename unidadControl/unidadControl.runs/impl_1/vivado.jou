@@ -1,0 +1,14 @@
+#-----------------------------------------------------------
+# Vivado v2023.1 (64-bit)
+# SW Build 3865809 on Sun May  7 15:05:29 MDT 2023
+# IP Build 3864474 on Sun May  7 20:36:21 MDT 2023
+# SharedData Build 3865790 on Sun May 07 13:33:03 MDT 2023
+# Start of session at: Tue Jun 11 20:40:20 2024
+# Process ID: 28256
+# Current directory: C:/Programas_escom/Arrqui/unidadControl/unidadControl.runs/impl_1
+# Command line: vivado.exe -log unidadControl.vdi -applog -product Vivado -messageDb vivado.pb -mode batch -source unidadControl.tcl -notrace
+# Log file: C:/Programas_escom/Arrqui/unidadControl/unidadControl.runs/impl_1/unidadControl.vdi
+# Journal file: C:/Programas_escom/Arrqui/unidadControl/unidadControl.runs/impl_1\vivado.jou
+# Running On: DELL-JOHN, OS: Windows, CPU Frequency: 2611 MHz, CPU Physical cores: 10, Host memory: 16849 MB
+#-----------------------------------------------------------
+source unidadControl.tcl -notrace

@@ -1,0 +1,4 @@
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Programas_escom/Arrqui/unidadControl/unidadControl.srcs/sources_1/new/unidadControl.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'unidadControl'
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Programas_escom/Arrqui/unidadControl/unidadControl.srcs/sim_1/new/unidadControl.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'unidadControl_tb'
